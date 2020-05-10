@@ -162,8 +162,8 @@ a {
 }
 
 .cardImage {
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 100%;
     object-fit: cover;
     padding: 20px;
@@ -193,8 +193,8 @@ a {
   }
 
 #sliders {
-	list-style: none;  
-	position: relative; 
+    list-style: none;  
+    position: relative; 
     width: 18rem;
     height: 18rem;
     overflow: hidden;
