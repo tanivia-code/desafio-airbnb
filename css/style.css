@@ -104,7 +104,7 @@ a {
     display: grid;
     float: flex;
     width: 100%;
-    background-color: #e82a2a;
+    background-color: #f06e6e;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     padding: 0.3%;
@@ -120,7 +120,7 @@ a {
     grid-column: 100%;
     grid-template-columns: 1fr;
     grid-row: 1fr 1fr;
-    background-color: #fc4444;
+    background-color: #f08484;
 
 }
 
@@ -162,8 +162,8 @@ a {
 }
 
 .cardImage {
-    max-width: 8rem;
-    max-height: 8rem;
+    max-width: 100%;
+    max-height: auto;
     border-radius: 100%;
     object-fit: cover;
     padding: 10px;
