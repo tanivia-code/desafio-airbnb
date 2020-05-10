@@ -163,6 +163,7 @@ a {
 
 .cardImage {
     max-width: 8rem;
+    max-height: 8rem;
     border-radius: 100%;
     object-fit: cover;
     padding: 20px;
