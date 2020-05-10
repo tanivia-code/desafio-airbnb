@@ -162,8 +162,8 @@ a {
 }
 
 .cardImage {
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
     border-radius: 100%;
     object-fit: cover;
     padding: 20px;
@@ -185,7 +185,7 @@ a {
 }
 
 .cardType {
-    width: max-content;
+    width: 100%;
     padding: 15px;
     text-align: center;
     text-transform: uppercase;
