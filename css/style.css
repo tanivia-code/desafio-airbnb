@@ -9,35 +9,43 @@ body {
     position: relative;   
 }
 
+.Cabecalho {
+position: relative;
+}
+
 .row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 2, 1fr;
+    grid-gap: 3%;
+    padding: 0.3em;
     background-color:#188581;
-    padding: 1em;
-    align-content: space-around;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
 }
 
 .column {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-
+    align-items: middle center;
+    padding: 0.3em;
+    margin: 0;
 }
 
 .imgCabecalho1 {
-    max-width: size;
-    object-fit: cover;
-    align-self: flex-end;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 100%;
 }
 
 .imgCabecalho2 {
-    max-width: size;
-    object-fit: cover;
-    align-self: flex-start;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    height: 100%;
 }
 
 .wrapper {
@@ -47,9 +55,9 @@ body {
 
 #cards {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1%;
-    margin: 3%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.3em;
+    margin: 0.5em;
 }
 
 .cardItem {
@@ -59,19 +67,22 @@ body {
     border-radius: 20px 20px 20px 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva;
     font-size: 1rem;
-    padding: 1.7rem;
+    padding: 0.3rem;
 }
 
 .cardImage {
-    width: 9rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 9rem;
     height: 9rem;
-    border-radius: 25%;
-    box-shadow: 0 0.25rem #4D6AB1;
-    justify-content: stretch;
+    border-radius: 100%;
+    box-shadow: 15px -7px 7px #4D6AB1;
+    justify-content: center;
 }
 
 .cardName {
-    padding: 2%;
+    padding: 0.3em;
     font-size: 18px;
     text-transform: lowercase;
 }
@@ -84,20 +95,19 @@ body {
     margin-bottom: 0.5%;
     margin-right: 0.5%;
     text-align: right;
+    font-size: 18px;
 }
 
 .cardType {
     width: 100%;
-    padding: 2%;
+    padding: 0.3em;
     text-align:center;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.a3 {
-    font-family: "Roboto", sans-serif;
-    color: #0000EE;
-    text-decoration: underline;   
+p {
+    padding: 0.3em;
 }
 
 .footer {
@@ -115,10 +125,10 @@ h4 {
     padding-bottom: 0.3em;
 }
 
-a {
+.hiperlink {
     font-family: "Roboto", sans-serif;
-    color: whitesmoke;
     text-decoration: none;
+    color: #ffffff;
 }
 
 .icon {
@@ -131,13 +141,14 @@ a {
 .rodape {
     display: grid;
     float: flex;
-    width: 100%;
+    max-width: 100%;
     background-color:#007CB5;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
     font-family: "Roboto", sans-serif;
     color: whitesmoke;
     padding: 0.3em;
+    margin: 0;
 
 }
 
@@ -164,23 +175,26 @@ a {
     text-align: left;
 }
 
-.a2 {
-    font-family: "Roboto", sans-serif;
-    color:#424242;
-    text-align: right;
-    text-decoration: none;   
+@media screen and (max-width: 576px){
+.row {
+    max-height: 30%;
 }
 
-.a4 {
-    font-family: "Roboto", sans-serif;
-    color:#424242;
-    text-align: center;
-    text-decoration: none;   
+.imgCabecalho1 {
+    max-width: 50%;
+    align-content: stretch;
 }
 
-@media(max-width:480px){
-.anuncios {
-    grid-template-columns: repeat(1, 1fr);
+.imgCabecalho2 {
+    display: none;
+}
+
+#cards {
+     grid-template-columns: repeat(1, 1fr);
+}
+
+.header {
+     grid-template-columns: repeat(1, 2fr);
 }
 
 .rodape {
