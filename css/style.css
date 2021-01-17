@@ -19,11 +19,10 @@ position: relative;
     grid-template-columns: 2, 1fr;
     grid-gap: 3%;
     padding: 0.3em;
-    background-color:#188581;
+    background-color: #0b2647;
     margin: 0;
     justify-content: center;
     align-items: center;
-    align-content: flex-start;
 }
 
 .column {
@@ -36,16 +35,15 @@ position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    max-height: 100%;
+    width: 70%;
 }
 
 .imgCabecalho2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 100%;
-    height: 100%;
+    max-height: 60%;
+    align-content: flex-end;
 }
 
 .wrapper {
@@ -125,25 +123,20 @@ h4 {
     padding-bottom: 0.3em;
 }
 
-.hiperlink {
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-    color: #ffffff;
-}
 
-.icon {
-    max-width: 35px;
-    overflow: hidden;
-    vertical-align: middle;
-    padding: 0.3em;
+a, a:link, a:visited, a:hover, a:focus, a:active {
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    color: inherit;
 }
 
 .rodape {
     display: grid;
     float: flex;
     max-width: 100%;
-    background-color:#007CB5;
-    grid-template-columns: repeat(4, 1fr);
+    background-color: #041121;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     font-family: "Roboto", sans-serif;
     color: whitesmoke;
@@ -172,7 +165,6 @@ h4 {
 
 #textRodape {
     padding: 0.3em;
-    text-align: left;
 }
 
 @media screen and (max-width: 576px){
@@ -225,4 +217,23 @@ h4 {
 #sliders li.slider-active{
 	z-index: 1;
     opacity: 1;
+}
+
+.fa {  
+padding: 20px;  
+text-align: right !important;  
+margin: 0.3%;  
+max-width: 100%;
+color: white;
+offset: inherit;
+}  
+
+#column1 {
+    display: inline-block;
+    text-align: center;
+}
+
+#column2 {
+    display: inline-block;
+    text-align: center;
 }
