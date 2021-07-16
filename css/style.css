@@ -20,7 +20,7 @@ position: relative;
     grid-gap: 3%;
     padding: 0.3em;
     background-color: #0047AB;
-    background-image: linear-gradient( to right, black, transparent, #0047AB );
+    background-image: linear-gradient( to top, black, transparent, #13293D );
     margin: 0;
     justify-content: center;
     align-items: center;
