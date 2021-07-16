@@ -21,7 +21,6 @@ position: relative;
     padding: 0.3em;
     background-color: ##07192e;
     background-image: linear-gradient( to center, black, transparent, #07192e );
-    filter: saturate(32%) invert(87%) drop-shadow(20px -20px 10px #0000ff);
     margin: 0;
     justify-content: center;
     align-items: center;
